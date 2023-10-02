@@ -1,5 +1,6 @@
 package org.launchcode.spaday.controllers;
 
+import org.apache.catalina.connector.Response;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -7,6 +8,7 @@ import java.util.ArrayList;
 
 
 @Controller
+@RequestMapping
 public class SpaDayController {
 
     public boolean checkSkinType(String skinType, String facialType) {
